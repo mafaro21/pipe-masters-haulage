@@ -1,103 +1,208 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="min-h-screen bg-white">
+      {/* Clean Navigation */}
+      <nav className="bg-white border-b border-gray-200 fixed w-full top-0 z-50">
+        <div className="max-w-6xl mx-auto px-6 py-4">
+          <div className="flex justify-between items-center">
+            <div className="text-2xl font-semibold text-blue-900 cursor-pointer">
+              Pipe Masters
+            </div>
+            <div className="flex items-center space-x-8">
+              <a href="/" className="text-blue-900 font-medium cursor-pointer">Home</a>
+              <a href="/services" className="text-gray-600 hover:text-blue-900 cursor-pointer">Services</a>
+              {/* <button className="bg-blue-900 text-white px-5 py-2 rounded-lg cursor-pointer hover:bg-blue-800 transition-colors">
+                Contact Us
+              </button> */}
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      </nav>
+
+      {/* Hero Section */}
+      <section className="min-h-screen flex items-center pt-20 bg-gradient-to-br from-blue-50 to-white">
+        <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+          {/* Text Content */}
+          <div className="flex-1">
+            {/* <div className="bg-blue-100 text-blue-900 px-4 py-2 rounded-full inline-block mb-6">
+              Trusted Since 2010
+            </div> */}
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+              Professional <span className="text-blue-900">Haulage</span> & <span className="text-blue-700">Plumbing</span> Services
+            </h1>
+            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+              Reliable cross-border transport and expert plumbing solutions for homes and businesses across Zimbabwe. Quality service you can count on.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              {/* <button className="bg-blue-900 text-white px-8 py-3 rounded-lg cursor-pointer hover:bg-blue-800 font-medium transition-colors">
+                Contact Us
+              </button> */}
+              <a href="/services" className="border-2 border-blue-900 text-blue-900 px-8 py-3 rounded-lg cursor-pointer hover:bg-blue-50 font-medium text-center transition-colors">
+                View Services
+              </a>
+            </div>
+          </div>
+
+          {/* Service Icons */}
+          <div className="flex-1 grid grid-cols-2 gap-6">
+            <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 text-center">
+              <div className="text-5xl mb-4">🚛</div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Haulage</h3>
+              <p className="text-gray-600">Cross-border transport</p>
+            </div>
+            <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 text-center">
+              <div className="text-5xl mb-4">🚰</div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Plumbing</h3>
+              <p className="text-gray-600">Expert pipe work</p>
+            </div>
+            <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 text-center">
+              <div className="text-5xl mb-4">🏗️</div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Construction</h3>
+              <p className="text-gray-600">Building services</p>
+            </div>
+            <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 text-center">
+              <div className="text-5xl mb-4">🔧</div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">More</h3>
+              <p className="text-gray-600">Additional services</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Service Showcase */}
+      {/* <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Core Services</h2>
+            <p className="text-gray-600 text-lg">Comprehensive solutions for all your needs</p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+           
+            <div className="bg-gradient-to-br from-blue-900 to-blue-700 rounded-3xl p-8 text-white">
+              <div className="text-6xl mb-6">🚛</div>
+              <h3 className="text-2xl font-bold mb-4">Cross-Border Haulage</h3>
+              <p className="text-blue-100 mb-6 text-lg">
+                Professional transport services across Southern Africa with reliable and safe delivery to all SADC countries.
+              </p>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="bg-blue-800/50 rounded-lg p-4 text-center">
+                  <div className="text-2xl">🌍</div>
+                  <p className="text-sm mt-2">All SADC Countries</p>
+                </div>
+                <div className="bg-blue-800/50 rounded-lg p-4 text-center">
+                  <div className="text-2xl">🛡️</div>
+                  <p className="text-sm mt-2">Safe & Secure</p>
+                </div>
+                <div className="bg-blue-800/50 rounded-lg p-4 text-center">
+                  <div className="text-2xl">⏱️</div>
+                  <p className="text-sm mt-2">On Time</p>
+                </div>
+                <div className="bg-blue-800/50 rounded-lg p-4 text-center">
+                  <div className="text-2xl">📦</div>
+                  <p className="text-sm mt-2">Any Cargo</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-gray-900 to-gray-700 rounded-3xl p-8 text-white">
+              <div className="text-6xl mb-6">🚰</div>
+              <h3 className="text-2xl font-bold mb-4">Professional Plumbing</h3>
+              <p className="text-gray-100 mb-6 text-lg">
+                Expert plumbing solutions for residential and commercial properties with quality workmanship and reliable service.
+              </p>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="bg-gray-800/50 rounded-lg p-4 text-center">
+                  <div className="text-2xl">🏠</div>
+                  <p className="text-sm mt-2">Residential</p>
+                </div>
+                <div className="bg-gray-800/50 rounded-lg p-4 text-center">
+                  <div className="text-2xl">🏢</div>
+                  <p className="text-sm mt-2">Commercial</p>
+                </div>
+                <div className="bg-gray-800/50 rounded-lg p-4 text-center">
+                  <div className="text-2xl">🚨</div>
+                  <p className="text-sm mt-2">24/7 Emergency</p>
+                </div>
+                <div className="bg-gray-800/50 rounded-lg p-4 text-center">
+                  <div className="text-2xl">🔧</div>
+                  <p className="text-sm mt-2">All Repairs</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> */}
+
+      {/* Process Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">How We Work</h2>
+            <p className="text-gray-600">Simple and straightforward process</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="text-center p-6">
+              <div className="bg-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg border">
+                <span className="text-2xl">📞</span>
+              </div>
+              <h3 className="font-semibold text-gray-900 mb-3">1. Contact Us</h3>
+              <p className="text-gray-600">Call or message us with your requirements</p>
+            </div>
+            <div className="text-center p-6">
+              <div className="bg-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg border">
+                <span className="text-2xl">💬</span>
+              </div>
+              <h3 className="font-semibold text-gray-900 mb-3">2. Discuss Project</h3>
+              <p className="text-gray-600">We understand your needs and provide solutions</p>
+            </div>
+            <div className="text-center p-6">
+              <div className="bg-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg border">
+                <span className="text-2xl">✅</span>
+              </div>
+              <h3 className="font-semibold text-gray-900 mb-3">3. Get It Done</h3>
+              <p className="text-gray-600">We deliver quality work on time</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="py-20 bg-blue-900 text-white">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h2 className="text-3xl font-bold mb-6">Ready to Work With Us?</h2>
+          <p className="text-blue-100 text-xl mb-8">
+            Contact us today for professional services you can trust
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            {/* <button className="bg-white text-blue-900 px-8 py-3 rounded-lg cursor-pointer hover:bg-gray-100 font-semibold transition-colors">
+              Contact Us
+            </button> */}
+            <button className="border-2 border-white text-white px-8 py-3 rounded-lg cursor-pointer hover:bg-white hover:text-blue-900 font-semibold transition-colors">
+              Call: 0777 777 777
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-gray-900 text-white py-16">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center">
+            <div className="text-3xl font-bold mb-6">Pipe Masters Haulage</div>
+            <p className="text-gray-300 mb-8 text-lg">Your trusted partner for professional services</p>
+            <div className="text-gray-300 space-y-3 text-lg">
+              <p>📍 Harare, Zimbabwe</p>
+              <p>📞 0777 777 777</p>
+              <p>✉️ info@pipemasters.com</p>
+            </div>
+            <div className="border-t border-gray-700 mt-12 pt-8 text-gray-400">
+              <p>&copy; 2025 Pipe Masters Haulage. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
       </footer>
     </div>
-  );
+  )
 }
