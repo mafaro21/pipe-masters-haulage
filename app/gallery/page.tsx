@@ -53,9 +53,9 @@ export default function GalleryPage() {
                             <a href="/" className="text-gray-600 hover:text-blue-900 cursor-pointer">Home</a>
                             <a href="/services" className="text-gray-600 hover:text-blue-900 cursor-pointer">Services</a>
                             <a href="/gallery" className="text-blue-900 font-medium cursor-pointer">Gallery</a>
-                            <button className="bg-blue-900 text-white px-5 py-2 rounded-lg cursor-pointer hover:bg-blue-800 transition-colors">
+                            {/* <button className="bg-blue-900 text-white px-5 py-2 rounded-lg cursor-pointer hover:bg-blue-800 transition-colors">
                                 Contact Us
-                            </button>
+                            </button> */}
                         </div>
                     </div>
                 </div>
@@ -106,9 +106,9 @@ export default function GalleryPage() {
                         Contact us to discuss your project
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                        <button className="bg-white text-blue-900 px-8 py-3 rounded-lg cursor-pointer hover:bg-gray-100 font-semibold transition-colors">
+                        {/* <button className="bg-white text-blue-900 px-8 py-3 rounded-lg cursor-pointer hover:bg-gray-100 font-semibold transition-colors">
                             Contact Us
-                        </button>
+                        </button> */}
                         <button className="border-2 border-white text-white px-8 py-3 rounded-lg cursor-pointer hover:bg-white hover:text-blue-900 font-semibold transition-colors">
                             Call: 07777777777
                         </button>
