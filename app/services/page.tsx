@@ -92,6 +92,7 @@ export default function ServicesPage() {
                         <div className="flex items-center space-x-8">
                             <a href="/" className="text-gray-600 hover:text-blue-900 cursor-pointer">Home</a>
                             <a href="/services" className="text-blue-900 font-medium cursor-pointer">Services</a>
+                            <a href="/gallery" className="text-blue-900 font-medium cursor-pointer">Gallery</a>
                             {/* <button className="bg-blue-900 text-white px-5 py-2 rounded-lg cursor-pointer hover:bg-blue-800 transition-colors">
                                 Contact Us
                             </button> */}
