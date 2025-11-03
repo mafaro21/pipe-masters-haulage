@@ -110,7 +110,7 @@ export default function GalleryPage() {
                             Contact Us
                         </button> */}
                         <button className="border-2 border-white text-white px-8 py-3 rounded-lg cursor-pointer hover:bg-white hover:text-blue-900 font-semibold transition-colors">
-                            Call: 07777777777
+                            Call: 0777 309 534
                         </button>
                     </div>
                 </div>
@@ -122,8 +122,8 @@ export default function GalleryPage() {
                     <div className="text-center">
                         <div className="text-3xl font-bold mb-6">Pipe Masters Haulage</div>
                         <div className="text-gray-300 space-y-3 text-lg">
-                            <p>📍 Harare, Zimbabwe</p>
-                            <p>📞 07777777777</p>
+                            <p>📍 55 Marlborough Drive, Marlborough, Harare, Zimbabwe</p>
+                            <p>📞 0777 309 534</p>
                             <p>✉️ info@pipemasters.com</p>
                         </div>
                         <div className="border-t border-gray-700 mt-12 pt-8 text-gray-400">

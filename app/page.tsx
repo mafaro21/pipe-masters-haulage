@@ -194,7 +194,7 @@ export default function Home() {
             <div className="text-3xl font-bold mb-6">Pipe Masters Haulage</div>
             <p className="text-gray-300 mb-8 text-lg">Your trusted partner for professional services</p>
             <div className="text-gray-300 space-y-3 text-lg">
-              <p>📍 Harare, Zimbabwe</p>
+              <p>📍 55 Marlborough Drive, Marlborough, Harare, Zimbabwe</p>
               <p>📞 0777 777 777</p>
               <p>✉️ info@pipemasters.com</p>
             </div>
