@@ -181,7 +181,7 @@ export default function Home() {
               Contact Us
             </button> */}
             <button className="border-2 border-white text-white px-8 py-3 rounded-lg cursor-pointer hover:bg-white hover:text-blue-900 font-semibold transition-colors">
-              Call: 0777 777 777
+              Call: 0777 309 534
             </button>
           </div>
         </div>
@@ -195,7 +195,7 @@ export default function Home() {
             <p className="text-gray-300 mb-8 text-lg">Your trusted partner for professional services</p>
             <div className="text-gray-300 space-y-3 text-lg">
               <p>📍 55 Marlborough Drive, Marlborough, Harare, Zimbabwe</p>
-              <p>📞 0777 777 777</p>
+              <p>📞 0777 309 534</p>
               <p>✉️ info@pipemasters.com</p>
             </div>
             <div className="border-t border-gray-700 mt-12 pt-8 text-gray-400">
