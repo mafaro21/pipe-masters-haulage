@@ -1,3 +1,7 @@
+export const metadata = {
+    title: 'Services - Pipe Masters',
+}
+
 export default function ServicesPage() {
     const services = [
         {
