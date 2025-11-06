@@ -6,6 +6,7 @@ import plumbing1 from '@/public/img/plumbing1.jpg'
 import plumbing2 from '@/public/img/plumbing2.jpg'
 import plumbing3 from '@/public/img/plumbing3.jpg'
 import plumbing4 from '@/public/img/plumbing4.jpg'
+import mobile1 from '@/public/img/mobile1.jpg'
 
 
 export const metadata = {
@@ -45,7 +46,7 @@ export default function GalleryPage() {
         {
             category: "Mobile Toilets",
             images: [
-                { src: "https://www.pressmach.com/public/uploads/media/How%20Do%20Portable%20Toilets%20Cabin%20Work6538ffa6de3b5.jpg", alt: "Portable restroom stall outdoors" },
+                { src: mobile1.src, alt: "Portable restroom stall outdoors" },
                 { src: "https://5.imimg.com/data5/EC/JU/MY-2531279/sintex-prefabricated-mobile-toilet.jpg", alt: "Mobile toilet unit at event" },
                 { src: "https://www.polyjohn.com/media/mageplaza/blog/post/g/e/gettyimages-92502012.jpg", alt: "Portable bathroom cabins in row" },
                 { src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRcYq071TgUSaCXBxKxqbVm38Ubvde0pmolQ&s", alt: "Sanitation facility for outdoor works" },

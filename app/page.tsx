@@ -1,3 +1,8 @@
+import plumbing2 from '@/public/img/plumbing2.jpg'
+import const2 from '@/public/img/const2.jpg'
+import mobile1 from '@/public/img/mobile1.jpg'
+
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
@@ -46,27 +51,57 @@ export default function Home() {
 
           {/* Service Icons */}
           <div className="flex-1 grid grid-cols-2 gap-6">
+            {/* Haulage */}
             <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 text-center">
-              <div className="text-5xl mb-4">🚛</div>
+              <img
+                src="https://www.scania.com/group/en/home/electrification/e-mobility-hub/electric-long-haulage-truck-scheduled-for-regular-traffic/_jcr_content/root/responsivegrid/responsivegrid/responsivegrid/heroimage.coreimg.85.992.jpeg/1715670963144/electric-long-haulage-truck-scheduled-for-regular-traffic-16-7-.jpeg"
+                alt="Haulage truck"
+                className="w-20 h-20 object-cover mx-auto mb-4 rounded-xl shadow"
+                loading="lazy"
+              />
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Haulage</h3>
               <p className="text-gray-600">Cross-border transport</p>
             </div>
+
+            {/* Plumbing */}
             <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 text-center">
-              <div className="text-5xl mb-4">🚰</div>
+              <img
+                src={plumbing2.src}
+                alt="Plumber working with pipes"
+                className="w-20 h-20 object-cover mx-auto mb-4 rounded-xl shadow"
+                loading="lazy"
+              />
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Plumbing</h3>
               <p className="text-gray-600">Expert pipe work</p>
             </div>
+
+            {/* Construction */}
             <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 text-center">
-              <div className="text-5xl mb-4">🏗️</div>
+              <img
+                src={const2.src}
+                alt="Construction site"
+                className="w-20 h-20 object-cover mx-auto mb-4 rounded-xl shadow"
+                loading="lazy"
+              />
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Construction</h3>
               <p className="text-gray-600">Building services</p>
             </div>
+
+            {/* More Services */}
             <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 text-center">
-              <div className="text-5xl mb-4">🔧</div>
+              <img
+                src={mobile1.src}
+                alt="Tools and equipment"
+                className="w-20 h-20 object-cover mx-auto mb-4 rounded-xl shadow"
+                loading="lazy"
+              />
               <h3 className="text-xl font-semibold text-gray-900 mb-2">More</h3>
               <p className="text-gray-600">Additional services</p>
             </div>
           </div>
+
+
+
         </div>
       </section>
 
