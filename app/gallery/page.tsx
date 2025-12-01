@@ -48,8 +48,8 @@ export default function GalleryPage() {
             images: [
                 { src: mobile1.src, alt: "Portable restroom stall outdoors" },
                 { src: "https://5.imimg.com/data5/EC/JU/MY-2531279/sintex-prefabricated-mobile-toilet.jpg", alt: "Mobile toilet unit at event" },
-                { src: "https://www.polyjohn.com/media/mageplaza/blog/post/g/e/gettyimages-92502012.jpg", alt: "Portable bathroom cabins in row" },
-                { src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRcYq071TgUSaCXBxKxqbVm38Ubvde0pmolQ&s", alt: "Sanitation facility for outdoor works" },
+                // { src: "https://www.polyjohn.com/media/mageplaza/blog/post/g/e/gettyimages-92502012.jpg", alt: "Portable bathroom cabins in row" },
+                // { src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRcYq071TgUSaCXBxKxqbVm38Ubvde0pmolQ&s", alt: "Sanitation facility for outdoor works" },
             ]
         }
     ];
