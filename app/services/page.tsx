@@ -165,10 +165,10 @@ export default function ServicesPage() {
                         <div className="text-gray-300 space-y-3 text-lg">
                             <p>📍 55 Marlborough Drive, Marlborough, Harare, Zimbabwe</p>
                             <p>📞 0777 309 534</p>
-                            <p>✉️ info@pipemasters.com</p>
+                            {/* <p>✉️ info@pipemasters.com</p> */}
                         </div>
                         <div className="border-t border-gray-700 mt-12 pt-8 text-gray-400">
-                            <p>&copy; 2025 Pipe Masters Haulage. All rights reserved.</p>
+                            <p>&copy; {new Date().getFullYear()} Pipe Masters Haulage. All rights reserved.</p>
                         </div>
                     </div>
                 </div>
