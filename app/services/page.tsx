@@ -84,6 +84,8 @@ export default function ServicesPage() {
         }
     ]
 
+    const currentYear = new Date().getFullYear();
+
     return (
         <div className="min-h-screen bg-white">
             {/* Navigation */}
@@ -168,7 +170,7 @@ export default function ServicesPage() {
                             {/* <p>✉️ info@pipemasters.com</p> */}
                         </div>
                         <div className="border-t border-gray-700 mt-12 pt-8 text-gray-400">
-                            <p>&copy; {new Date().getFullYear()} Pipe Masters Haulage. All rights reserved.</p>
+                            <p>&copy; {currentYear} Pipe Masters Haulage. All rights reserved.</p>
                         </div>
                     </div>
                 </div>
